@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "champ_msgs__py",
+		"source" : "/home/lx/go2/build/champ_msgs/champ_msgs__py"
+	}
+}

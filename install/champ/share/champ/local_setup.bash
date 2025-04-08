@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ/ament_cmake_environment_hooks/local_setup.bash

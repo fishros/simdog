@@ -1,0 +1,286 @@
+[0.023s] Invoking command in '/home/lx/go2/build/champ_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_msgs -- -j32 -l32
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_generator_c[0m
+[0.059s] [  1%] Built target champ_msgs__cpp
+[0.064s] [ 12%] Built target champ_msgs__rosidl_generator_c
+[0.065s] [ 12%] Built target ament_cmake_python_symlink_champ_msgs
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_cpp[0m
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_introspection_c[0m
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_c[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.095s] [ 35%] Built target champ_msgs__rosidl_typesupport_introspection_cpp
+[0.095s] [ 35%] Built target champ_msgs__rosidl_typesupport_c
+[0.095s] [ 56%] Built target champ_msgs__rosidl_typesupport_introspection_c
+[0.095s] [ 58%] Built target champ_msgs__rosidl_typesupport_cpp
+[0.096s] [ 70%] Built target champ_msgs__rosidl_typesupport_fastrtps_cpp
+[0.096s] [ 82%] Built target champ_msgs__rosidl_typesupport_fastrtps_c
+[0.112s] [ 82%] Built target champ_msgs
+[0.130s] [ 83%] Built target champ_msgs__py
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_generator_py[0m
+[0.157s] [ 93%] Built target champ_msgs__rosidl_generator_py
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target champ_msgs__rosidl_typesupport_c__pyext[0m
+[0.176s] [ 95%] Built target champ_msgs__rosidl_typesupport_introspection_c__pyext
+[0.177s] [100%] Built target champ_msgs__rosidl_typesupport_c__pyext
+[0.177s] [100%] Built target champ_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.239s] running egg_info
+[0.239s] writing champ_msgs.egg-info/PKG-INFO
+[0.239s] writing dependency_links to champ_msgs.egg-info/dependency_links.txt
+[0.239s] writing top-level names to champ_msgs.egg-info/top_level.txt
+[0.242s] reading manifest file 'champ_msgs.egg-info/SOURCES.txt'
+[0.242s] writing manifest file 'champ_msgs.egg-info/SOURCES.txt'
+[0.261s] [100%] Built target ament_cmake_python_build_champ_msgs_egg
+[0.272s] Invoked command in '/home/lx/go2/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_msgs -- -j32 -l32
+[0.273s] Invoking command in '/home/lx/go2/build/champ_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_msgs
+[0.278s] -- Install configuration: ""
+[0.278s] -- Execute custom install script
+[0.279s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/ament_index/resource_index/rosidl_interfaces/champ_msgs
+[0.288s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/contacts.h
+[0.294s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/contacts_stamped.h
+[0.301s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__functions.h
+[0.307s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__struct.h
+[0.314s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__type_support.h
+[0.320s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__functions.h
+[0.326s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__struct.h
+[0.332s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__type_support.h
+[0.338s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__functions.h
+[0.344s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__struct.h
+[0.351s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__type_support.h
+[0.358s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__functions.h
+[0.365s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__struct.h
+[0.372s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__type_support.h
+[0.379s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__functions.h
+[0.385s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__struct.h
+[0.392s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__type_support.h
+[0.398s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__functions.h
+[0.404s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__struct.h
+[0.411s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__type_support.h
+[0.416s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__functions.h
+[0.424s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__struct.h
+[0.430s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__type_support.h
+[0.437s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__functions.h
+[0.443s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__struct.h
+[0.449s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__type_support.h
+[0.454s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__functions.h
+[0.459s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__struct.h
+[0.466s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__type_support.h
+[0.471s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/imu.h
+[0.478s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/joints.h
+[0.483s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/pid.h
+[0.490s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/point.h
+[0.495s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/point_array.h
+[0.502s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/pose.h
+[0.509s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.515s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/velocities.h
+[0.522s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/library_path.sh
+[0.527s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/library_path.dsv
+[0.533s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h
+[0.538s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_c.h
+[0.544s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[0.550s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__rosidl_typesupport_fastrtps_c.h
+[0.555s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__rosidl_typesupport_fastrtps_c.h
+[0.561s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__rosidl_typesupport_fastrtps_c.h
+[0.567s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_c.h
+[0.573s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[0.579s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__rosidl_typesupport_fastrtps_c.h
+[0.585s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.591s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__rosidl_typesupport_introspection_c.h
+[0.598s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__rosidl_typesupport_introspection_c.h
+[0.604s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[0.610s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__rosidl_typesupport_introspection_c.h
+[0.616s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__rosidl_typesupport_introspection_c.h
+[0.622s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h
+[0.628s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__rosidl_typesupport_introspection_c.h
+[0.633s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[0.639s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__rosidl_typesupport_introspection_c.h
+[0.645s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.651s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/contacts.hpp
+[0.657s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/contacts_stamped.hpp
+[0.662s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__builder.hpp
+[0.667s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__struct.hpp
+[0.673s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__traits.hpp
+[0.679s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__type_support.hpp
+[0.686s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__builder.hpp
+[0.692s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__struct.hpp
+[0.697s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__traits.hpp
+[0.704s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__type_support.hpp
+[0.710s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__builder.hpp
+[0.715s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__struct.hpp
+[0.722s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__traits.hpp
+[0.728s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__type_support.hpp
+[0.733s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__builder.hpp
+[0.739s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__struct.hpp
+[0.746s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__traits.hpp
+[0.753s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__type_support.hpp
+[0.759s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__builder.hpp
+[0.765s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__struct.hpp
+[0.770s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__traits.hpp
+[0.776s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__type_support.hpp
+[0.781s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__builder.hpp
+[0.787s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__struct.hpp
+[0.793s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__traits.hpp
+[0.800s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__type_support.hpp
+[0.806s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__builder.hpp
+[0.811s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__struct.hpp
+[0.816s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__traits.hpp
+[0.822s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__type_support.hpp
+[0.828s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__builder.hpp
+[0.834s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__struct.hpp
+[0.840s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__traits.hpp
+[0.846s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__type_support.hpp
+[0.852s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__builder.hpp
+[0.858s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__struct.hpp
+[0.864s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__traits.hpp
+[0.870s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__type_support.hpp
+[0.876s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/imu.hpp
+[0.881s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/joints.hpp
+[0.888s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/pid.hpp
+[0.893s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/point.hpp
+[0.898s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/point_array.hpp
+[0.904s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/pose.hpp
+[0.910s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.916s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/velocities.hpp
+[0.923s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp
+[0.928s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.934s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[0.939s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__rosidl_typesupport_fastrtps_cpp.hpp
+[0.944s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__rosidl_typesupport_fastrtps_cpp.hpp
+[0.950s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__rosidl_typesupport_fastrtps_cpp.hpp
+[0.957s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.962s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[0.969s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__rosidl_typesupport_fastrtps_cpp.hpp
+[0.975s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.983s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp
+[0.990s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/contacts_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.998s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[1.006s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/joints__rosidl_typesupport_introspection_cpp.hpp
+[1.013s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pid__rosidl_typesupport_introspection_cpp.hpp
+[1.020s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp
+[1.028s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/point_array__rosidl_typesupport_introspection_cpp.hpp
+[1.035s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[1.042s] -- Symlinking: /home/lx/go2/install/champ_msgs/include/champ_msgs/champ_msgs/msg/detail/velocities__rosidl_typesupport_introspection_cpp.hpp
+[1.050s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/pythonpath.sh
+[1.058s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/pythonpath.dsv
+[1.066s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[1.075s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.083s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.091s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[1.101s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/__init__.py
+[1.108s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/_champ_msgs_s.ep.rosidl_typesupport_c.c
+[1.116s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/_champ_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.123s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/_champ_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.129s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.135s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.143s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.149s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/libchamp_msgs__rosidl_generator_py.so
+[1.155s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/__init__.py
+[1.161s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts.py
+[1.166s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts_s.c
+[1.174s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts_stamped.py
+[1.180s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts_stamped_s.c
+[1.185s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_imu.py
+[1.192s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_imu_s.c
+[1.198s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_joints.py
+[1.203s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_joints_s.c
+[1.208s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pid.py
+[1.215s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pid_s.c
+[1.220s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point.py
+[1.225s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point_array.py
+[1.231s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point_array_s.c
+[1.237s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point_s.c
+[1.242s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pose.py
+[1.247s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pose_s.c
+[1.252s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_velocities.py
+[1.257s] -- Symlinking: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_velocities_s.c
+[1.262s] -- Up-to-date symlink: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.262s] -- Up-to-date symlink: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.262s] -- Up-to-date symlink: /home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/champ_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.262s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Velocities.idl
+[1.267s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/PID.idl
+[1.272s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Imu.idl
+[1.277s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Point.idl
+[1.284s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/PointArray.idl
+[1.289s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Joints.idl
+[1.294s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Contacts.idl
+[1.301s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/ContactsStamped.idl
+[1.307s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Pose.idl
+[1.314s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Velocities.msg
+[1.319s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/PID.msg
+[1.326s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Imu.msg
+[1.331s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Point.msg
+[1.336s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/PointArray.msg
+[1.342s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Joints.msg
+[1.347s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Contacts.msg
+[1.353s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/ContactsStamped.msg
+[1.359s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/msg/Pose.msg
+[1.365s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/ament_index/resource_index/package_run_dependencies/champ_msgs
+[1.371s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/ament_index/resource_index/parent_prefix_path/champ_msgs
+[1.376s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/ament_prefix_path.sh
+[1.382s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/ament_prefix_path.dsv
+[1.388s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/path.sh
+[1.393s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/environment/path.dsv
+[1.399s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/local_setup.bash
+[1.405s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/local_setup.sh
+[1.410s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/local_setup.zsh
+[1.415s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/local_setup.dsv
+[1.420s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/package.dsv
+[1.426s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/ament_index/resource_index/packages/champ_msgs
+[1.433s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/rosidl_cmake-extras.cmake
+[1.438s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.444s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.450s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.456s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.462s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.467s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.473s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgsConfig.cmake
+[1.478s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgsConfig-version.cmake
+[1.486s] -- Symlinking: /home/lx/go2/install/champ_msgs/share/champ_msgs/package.xml
+[1.491s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_generator_c.so
+[1.491s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_generator_c.so" to ""
+[1.491s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_fastrtps_c.so
+[1.492s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[1.492s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_introspection_c.so
+[1.492s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_introspection_c.so" to ""
+[1.492s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_c.so
+[1.492s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_c.so" to ""
+[1.493s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.493s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.493s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_introspection_cpp.so
+[1.493s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[1.494s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_cpp.so
+[1.494s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_typesupport_cpp.so" to ""
+[1.518s] Listing '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/__init__.py'...
+[1.518s] Listing '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/__init__.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_contacts_stamped.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_imu.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_joints.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pid.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_point_array.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_pose.py'...
+[1.518s] Compiling '/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages/champ_msgs/msg/_velocities.py'...
+[1.520s] -- Installing: /home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_generator_py.so
+[1.521s] -- Set runtime path of "/home/lx/go2/install/champ_msgs/lib/libchamp_msgs__rosidl_generator_py.so" to ""
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_generator_cExport.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_cExport.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_generator_cppExport.cmake
+[1.521s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_cppExport.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/champ_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_generator_pyExport.cmake
+[1.522s] -- Installing: /home/lx/go2/install/champ_msgs/share/champ_msgs/cmake/export_champ_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.525s] Invoked command in '/home/lx/go2/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_msgs

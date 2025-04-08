@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_msgs/rosidl_typesupport_fastrtps_cpp/champ_msgs/msg/detail/pid__rosidl_typesupport_fastrtps_cpp.hpp

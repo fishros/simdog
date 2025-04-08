@@ -1,0 +1,17 @@
+/home/lx/go2/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+/home/lx/go2/install/champ_teleop/lib/champ_teleop/champ_teleop.py
+/home/lx/go2/install/champ_teleop/share/ament_index/resource_index/package_run_dependencies/champ_teleop
+/home/lx/go2/install/champ_teleop/share/ament_index/resource_index/parent_prefix_path/champ_teleop
+/home/lx/go2/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.sh
+/home/lx/go2/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.dsv
+/home/lx/go2/install/champ_teleop/share/champ_teleop/environment/path.sh
+/home/lx/go2/install/champ_teleop/share/champ_teleop/environment/path.dsv
+/home/lx/go2/install/champ_teleop/share/champ_teleop/local_setup.bash
+/home/lx/go2/install/champ_teleop/share/champ_teleop/local_setup.sh
+/home/lx/go2/install/champ_teleop/share/champ_teleop/local_setup.zsh
+/home/lx/go2/install/champ_teleop/share/champ_teleop/local_setup.dsv
+/home/lx/go2/install/champ_teleop/share/champ_teleop/package.dsv
+/home/lx/go2/install/champ_teleop/share/ament_index/resource_index/packages/champ_teleop
+/home/lx/go2/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig.cmake
+/home/lx/go2/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig-version.cmake
+/home/lx/go2/install/champ_teleop/share/champ_teleop/package.xml

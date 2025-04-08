@@ -1,0 +1,1 @@
+/home/lx/go2/build/lio_sam/rosidl_generator_cpp/lio_sam/srv/detail/save_map__traits.hpp

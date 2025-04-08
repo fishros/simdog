@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_msgs/rosidl_typesupport_fastrtps_c/champ_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_c.h

@@ -1,0 +1,1 @@
+/home/lx/go2/build/lio_sam/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c

@@ -1,0 +1,1 @@
+Invoking command in '/home/lx/go2/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/LIO-SAM -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/lio_sam

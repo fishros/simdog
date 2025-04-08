@@ -1,0 +1,5 @@
+[0.027s] Invoking command in '/home/lx/go2/build/realsense_ros_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/realsense_ros_gazebo -- -j32 -l32
+[0.082s] [ 33%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o[0m
+[0.083s] [ 66%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o[0m
+[14.321s] [100%] [32m[1mLinking CXX shared library librealsense_gazebo_plugin.so[0m
+[14.810s] [100%] Built target realsense_gazebo_plugin

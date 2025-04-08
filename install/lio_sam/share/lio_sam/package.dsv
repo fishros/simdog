@@ -1,0 +1,11 @@
+source;share/lio_sam/hook/cmake_prefix_path.ps1
+source;share/lio_sam/hook/cmake_prefix_path.dsv
+source;share/lio_sam/hook/cmake_prefix_path.sh
+source;share/lio_sam/hook/ld_library_path_lib.ps1
+source;share/lio_sam/hook/ld_library_path_lib.dsv
+source;share/lio_sam/hook/ld_library_path_lib.sh
+source;share/lio_sam/local_setup.bash
+source;share/lio_sam/local_setup.dsv
+source;share/lio_sam/local_setup.ps1
+source;share/lio_sam/local_setup.sh
+source;share/lio_sam/local_setup.zsh

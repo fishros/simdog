@@ -1,0 +1,7 @@
+{
+  "package_name": "lio_sam",
+  "non_idl_tuples": [
+    "/home/lx/go2/src/LIO-SAM:msg/CloudInfo.msg",
+    "/home/lx/go2/src/LIO-SAM:srv/SaveMap.srv"
+  ]
+}

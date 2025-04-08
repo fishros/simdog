@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lx/go2/build/champ_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/launch/description.launch
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/launch/description.launch.py
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/launch/view_urdf.launch
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/rviz/urdf_viewer.rviz
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/arm/base.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/arm/lower_arm.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/arm/upper_arm.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/arm/wrist1.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/arm/wrist2.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/asus_camera_simple.dae
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/base.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/base_simple.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/hip.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/hokuyo_utm_30lx.dae
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/lower_leg.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/lower_leg_simple.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/upper_leg.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/meshes/upper_leg_simple.stl
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/accessories.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/asus_camera.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/champ.urdf
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/champ.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/champ_arm.urdf
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/champ_velodyne.urdf
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/gen_urdf
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/hokuyo_utm30lx.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/leg.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/urdf/properties.urdf.xacro
+-- Symlinking: /home/lx/go2/install/champ_description/share/ament_index/resource_index/package_run_dependencies/champ_description
+-- Symlinking: /home/lx/go2/install/champ_description/share/ament_index/resource_index/parent_prefix_path/champ_description
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/environment/path.sh
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/environment/path.dsv
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/local_setup.bash
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/local_setup.sh
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/local_setup.zsh
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/local_setup.dsv
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/package.dsv
+-- Symlinking: /home/lx/go2/install/champ_description/share/ament_index/resource_index/packages/champ_description
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/cmake/champ_descriptionConfig.cmake
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/cmake/champ_descriptionConfig-version.cmake
+-- Symlinking: /home/lx/go2/install/champ_description/share/champ_description/package.xml

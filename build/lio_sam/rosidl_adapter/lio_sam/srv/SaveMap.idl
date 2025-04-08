@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lio_sam/srv/SaveMap.srv
+// generated code does not contain a copyright notice
+
+
+module lio_sam {
+  module srv {
+    struct SaveMap_Request {
+      float resolution;
+
+      string destination;
+    };
+    struct SaveMap_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,39 @@
+[0.033s] Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+[0.067s] Invoked command in '/home/lx/go2/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+[0.075s] Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ
+[0.082s] -- Install configuration: ""
+[0.082s] -- Execute custom install script
+[0.082s] -- Symlinking: /home/lx/go2/install/champ/include/champ/LICENSE
+[0.101s] -- Symlinking: /home/lx/go2/install/champ/include/champ/README.md
+[0.113s] -- Symlinking: /home/lx/go2/install/champ/include/champ/bla/basic_linear_algebra.h
+[0.118s] -- Symlinking: /home/lx/go2/install/champ/include/champ/bla/memory_delegate.h
+[0.118s] -- Symlinking: /home/lx/go2/install/champ/include/champ/body_controller/body_controller.h
+[0.123s] -- Symlinking: /home/lx/go2/install/champ/include/champ/geometry/geometry.h
+[0.130s] -- Symlinking: /home/lx/go2/install/champ/include/champ/kinematics/kinematics.h
+[0.138s] -- Symlinking: /home/lx/go2/install/champ/include/champ/leg_controller/leg_controller.h
+[0.146s] -- Symlinking: /home/lx/go2/install/champ/include/champ/leg_controller/phase_generator.h
+[0.153s] -- Symlinking: /home/lx/go2/install/champ/include/champ/leg_controller/trajectory_planner.h
+[0.160s] -- Symlinking: /home/lx/go2/install/champ/include/champ/macros/macros.h
+[0.167s] -- Symlinking: /home/lx/go2/install/champ/include/champ/odometry/odometry.h
+[0.174s] -- Symlinking: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_base.h
+[0.181s] -- Symlinking: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_components.h
+[0.188s] -- Symlinking: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_joint.h
+[0.195s] -- Symlinking: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_leg.h
+[0.201s] -- Symlinking: /home/lx/go2/install/champ/include/champ/utils/urdf_loader.h
+[0.208s] -- Symlinking: /home/lx/go2/install/champ/include/champ/utils/xmlrpc_helpers.h
+[0.215s] -- Symlinking: /home/lx/go2/install/champ/share/ament_index/resource_index/package_run_dependencies/champ
+[0.222s] -- Symlinking: /home/lx/go2/install/champ/share/ament_index/resource_index/parent_prefix_path/champ
+[0.229s] -- Symlinking: /home/lx/go2/install/champ/share/champ/environment/ament_prefix_path.sh
+[0.236s] -- Symlinking: /home/lx/go2/install/champ/share/champ/environment/ament_prefix_path.dsv
+[0.242s] -- Symlinking: /home/lx/go2/install/champ/share/champ/environment/path.sh
+[0.249s] -- Symlinking: /home/lx/go2/install/champ/share/champ/environment/path.dsv
+[0.256s] -- Symlinking: /home/lx/go2/install/champ/share/champ/local_setup.bash
+[0.263s] -- Symlinking: /home/lx/go2/install/champ/share/champ/local_setup.sh
+[0.269s] -- Symlinking: /home/lx/go2/install/champ/share/champ/local_setup.zsh
+[0.276s] -- Symlinking: /home/lx/go2/install/champ/share/champ/local_setup.dsv
+[0.283s] -- Symlinking: /home/lx/go2/install/champ/share/champ/package.dsv
+[0.291s] -- Symlinking: /home/lx/go2/install/champ/share/ament_index/resource_index/packages/champ
+[0.298s] -- Symlinking: /home/lx/go2/install/champ/share/champ/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.305s] -- Symlinking: /home/lx/go2/install/champ/share/champ/cmake/champConfig.cmake
+[0.311s] -- Symlinking: /home/lx/go2/install/champ/share/champ/cmake/champConfig-version.cmake
+[0.317s] -- Symlinking: /home/lx/go2/install/champ/share/champ/package.xml

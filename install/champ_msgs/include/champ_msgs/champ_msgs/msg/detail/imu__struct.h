@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_msgs/rosidl_generator_c/champ_msgs/msg/detail/imu__struct.h

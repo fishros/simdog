@@ -1,0 +1,1 @@
+Invoking command in '/home/lx/go2/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/lio_sam -- -j32 -l32

@@ -1,0 +1,1 @@
+/home/lx/go2/build/realsense_ros_gazebo/ament_cmake_environment_hooks/local_setup.sh

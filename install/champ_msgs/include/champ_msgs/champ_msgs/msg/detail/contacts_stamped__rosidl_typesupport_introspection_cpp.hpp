@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_msgs/rosidl_typesupport_introspection_cpp/champ_msgs/msg/detail/contacts_stamped__rosidl_typesupport_introspection_cpp.hpp

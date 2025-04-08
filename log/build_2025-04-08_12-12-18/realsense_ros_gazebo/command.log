@@ -1,0 +1,1 @@
+Invoking command in '/home/lx/go2/build/realsense_ros_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/realsense_ros_gazebo -- -j32 -l32

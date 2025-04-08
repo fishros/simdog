@@ -1,0 +1,1 @@
+/home/lx/go2/build/lio_sam/rosidl_generator_py/lio_sam/srv/_save_map_s.c

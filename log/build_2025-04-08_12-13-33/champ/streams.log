@@ -1,0 +1,40 @@
+[0.026s] Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+[0.066s] Invoked command in '/home/lx/go2/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+[0.067s] Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ
+[0.081s] -- Install configuration: ""
+[0.081s] -- Execute custom install script
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/LICENSE
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/README.md
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/bla/basic_linear_algebra.h
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/bla/memory_delegate.h
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/body_controller/body_controller.h
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/geometry/geometry.h
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/kinematics/kinematics.h
+[0.081s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/leg_controller/leg_controller.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/leg_controller/phase_generator.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/leg_controller/trajectory_planner.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/macros/macros.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/odometry/odometry.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_base.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_components.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_joint.h
+[0.082s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/quadruped_base/quadruped_leg.h
+[0.083s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/utils/urdf_loader.h
+[0.083s] -- Up-to-date symlink: /home/lx/go2/install/champ/include/champ/utils/xmlrpc_helpers.h
+[0.083s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/ament_index/resource_index/package_run_dependencies/champ
+[0.083s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/ament_index/resource_index/parent_prefix_path/champ
+[0.083s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/environment/ament_prefix_path.sh
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/environment/ament_prefix_path.dsv
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/environment/path.sh
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/environment/path.dsv
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/local_setup.bash
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/local_setup.sh
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/local_setup.zsh
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/local_setup.dsv
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/package.dsv
+[0.084s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/ament_index/resource_index/packages/champ
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/cmake/champConfig.cmake
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/cmake/champConfig-version.cmake
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/champ/share/champ/package.xml
+[0.112s] Invoked command in '/home/lx/go2/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ

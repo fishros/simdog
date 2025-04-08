@@ -1,0 +1,4 @@
+source;share/go2_config/local_setup.bash
+source;share/go2_config/local_setup.dsv
+source;share/go2_config/local_setup.sh
+source;share/go2_config/local_setup.zsh

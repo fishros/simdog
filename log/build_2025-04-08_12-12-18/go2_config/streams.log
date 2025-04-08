@@ -1,0 +1,54 @@
+[0.025s] Invoking command in '/home/lx/go2/build/go2_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/go2_config -- -j32 -l32
+[0.066s] Invoked command in '/home/lx/go2/build/go2_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/go2_config -- -j32 -l32
+[0.067s] Invoking command in '/home/lx/go2/build/go2_config': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/go2_config
+[0.084s] -- Install configuration: ""
+[0.085s] -- Execute custom install script
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/launch/bringup.launch.py
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/launch/gazebo.launch.py
+[0.085s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/launch/gazebo_velodyne.launch.py
+[0.086s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/launch/navigate.launch.py
+[0.086s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/launch/slam.launch.py
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/autonomy/navigation.yaml
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/autonomy/slam.yaml
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/gait/gait.yaml
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/joints/joints.yaml
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/links/links.yaml
+[0.087s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/config/ros_control/ros_control.yaml
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/maps/map.pgm
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/maps/map.yaml
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/maps/playground.pgm
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/maps/playground.yaml
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/worlds/default.world
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/worlds/house.world
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/worlds/my.world
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/worlds/outdoor.world
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/worlds/playground.world
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitA_01.jpg
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitA_02.jpg
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitB_01.jpg
+[0.088s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitB_02.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitC_01.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitC_02.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitD_01.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitD_02.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitD_03.jpg
+[0.090s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/DeskPortraitD_04.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitA_01.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitA_02.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitB_01.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitB_02.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitB_03.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitC_01.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitD_01.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitD_02.jpg
+[0.091s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitE_01.jpg
+[0.093s] -- Up-to-date symlink: /home/lx/go2/install/go2_config/share/go2_config/photos/PortraitE_02.jpg
+[0.093s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[0.093s]   ament_cmake_symlink_install_directory() can't find
+[0.093s]   '/home/lx/go2/src/unitree-go2-ros2/robots/configs/go2_config/models'
+[0.093s] Call Stack (most recent call first):
+[0.093s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[0.093s]   cmake_install.cmake:46 (include)
+[0.094s] 
+[0.094s] [0m
+[0.105s] Invoked command in '/home/lx/go2/build/go2_config' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/go2_config

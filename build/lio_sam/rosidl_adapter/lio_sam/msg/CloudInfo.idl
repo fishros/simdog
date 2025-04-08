@@ -1,0 +1,67 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lio_sam/msg/CloudInfo.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+#include "std_msgs/msg/Header.idl"
+
+module lio_sam {
+  module msg {
+    @verbatim (language="comment", text=
+      "Cloud Info")
+    struct CloudInfo {
+      std_msgs::msg::Header header;
+
+      sequence<int32> start_ring_index;
+
+      sequence<int32> end_ring_index;
+
+      @verbatim (language="comment", text=
+        "point column index in range image")
+      sequence<int32> point_col_ind;
+
+      @verbatim (language="comment", text=
+        "point range")
+      sequence<float> point_range;
+
+      int64 imu_available;
+
+      int64 odom_available;
+
+      @verbatim (language="comment", text=
+        "Attitude for LOAM initialization")
+      float imu_roll_init;
+
+      float imu_pitch_init;
+
+      float imu_yaw_init;
+
+      @verbatim (language="comment", text=
+        "Initial guess from imu pre-integration")
+      float initial_guess_x;
+
+      float initial_guess_y;
+
+      float initial_guess_z;
+
+      float initial_guess_roll;
+
+      float initial_guess_pitch;
+
+      float initial_guess_yaw;
+
+      @verbatim (language="comment", text=
+        "Point cloud messages" "\n"
+        "original cloud deskewed")
+      sensor_msgs::msg::PointCloud2 cloud_deskewed;
+
+      @verbatim (language="comment", text=
+        "extracted corner feature")
+      sensor_msgs::msg::PointCloud2 cloud_corner;
+
+      @verbatim (language="comment", text=
+        "extracted surface feature")
+      sensor_msgs::msg::PointCloud2 cloud_surface;
+    };
+  };
+};

@@ -1,0 +1,16 @@
+setup.py
+champ_msgs/__init__.py
+champ_msgs.egg-info/PKG-INFO
+champ_msgs.egg-info/SOURCES.txt
+champ_msgs.egg-info/dependency_links.txt
+champ_msgs.egg-info/top_level.txt
+champ_msgs/msg/__init__.py
+champ_msgs/msg/_contacts.py
+champ_msgs/msg/_contacts_stamped.py
+champ_msgs/msg/_imu.py
+champ_msgs/msg/_joints.py
+champ_msgs/msg/_pid.py
+champ_msgs/msg/_point.py
+champ_msgs/msg/_point_array.py
+champ_msgs/msg/_pose.py
+champ_msgs/msg/_velocities.py

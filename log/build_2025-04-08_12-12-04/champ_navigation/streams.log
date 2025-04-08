@@ -1,0 +1,46 @@
+[0.020s] Invoking command in '/home/lx/go2/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_navigation
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.126s] -- The CXX compiler identification is GNU 11.4.0
+[0.133s] -- Detecting C compiler ABI info
+[0.185s] -- Detecting C compiler ABI info - done
+[0.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.191s] -- Detecting CXX compiler ABI info
+[0.250s] -- Detecting CXX compiler ABI info - done
+[0.255s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.255s] -- Detecting CXX compile features
+[0.255s] -- Detecting CXX compile features - done
+[0.259s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.355s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.398s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.467s] -- Configuring done
+[0.469s] -- Generating done
+[0.470s] -- Build files have been written to: /home/lx/go2/build/champ_navigation
+[0.482s] Invoked command in '/home/lx/go2/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_navigation
+[0.483s] Invoking command in '/home/lx/go2/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_navigation -- -j32 -l32
+[0.514s] Invoked command in '/home/lx/go2/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_navigation -- -j32 -l32
+[0.515s] Invoking command in '/home/lx/go2/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_navigation
+[0.520s] -- Install configuration: ""
+[0.520s] -- Execute custom install script
+[0.521s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/launch/navigate.launch.py
+[0.526s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/launch/slam.launch.py
+[0.533s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/rviz/navigation.rviz
+[0.540s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/rviz/navigation_minimal.rviz
+[0.546s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/rviz/slam.rviz
+[0.553s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/ament_index/resource_index/package_run_dependencies/champ_navigation
+[0.560s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/ament_index/resource_index/parent_prefix_path/champ_navigation
+[0.566s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/environment/ament_prefix_path.sh
+[0.573s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/environment/ament_prefix_path.dsv
+[0.579s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/environment/path.sh
+[0.586s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/environment/path.dsv
+[0.592s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/local_setup.bash
+[0.599s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/local_setup.sh
+[0.605s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/local_setup.zsh
+[0.613s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/local_setup.dsv
+[0.619s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/package.dsv
+[0.626s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/ament_index/resource_index/packages/champ_navigation
+[0.634s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/cmake/champ_navigationConfig.cmake
+[0.642s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/cmake/champ_navigationConfig-version.cmake
+[0.649s] -- Symlinking: /home/lx/go2/install/champ_navigation/share/champ_navigation/package.xml
+[0.658s] Invoked command in '/home/lx/go2/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_navigation

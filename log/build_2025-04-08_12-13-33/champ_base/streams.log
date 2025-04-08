@@ -1,0 +1,97 @@
+[0.007s] Invoking command in '/home/lx/go2/build/champ_base': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_base
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.089s] -- The CXX compiler identification is GNU 11.4.0
+[0.093s] -- Detecting C compiler ABI info
+[0.137s] -- Detecting C compiler ABI info - done
+[0.141s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.141s] -- Detecting C compile features
+[0.142s] -- Detecting C compile features - done
+[0.144s] -- Detecting CXX compiler ABI info
+[0.198s] -- Detecting CXX compiler ABI info - done
+[0.202s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.202s] -- Detecting CXX compile features
+[0.202s] -- Detecting CXX compile features - done
+[0.209s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.297s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.332s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.358s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.398s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.403s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.411s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.435s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.473s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.475s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.546s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.568s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.602s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.609s] -- Looking for pthread.h
+[0.660s] -- Looking for pthread.h - found
+[0.660s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.712s] -- Found Threads: TRUE  
+[0.754s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.754s] -- Found champ_msgs: 0.1.0 (/home/lx/go2/install/champ_msgs/share/champ_msgs/cmake)
+[0.774s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.801s] -- Found trajectory_msgs: 4.8.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.814s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.827s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.903s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.922s] -- Found champ: 0.1.0 (/home/lx/go2/install/champ/share/champ/cmake)
+[0.973s] -- Configuring done
+[1.000s] -- Generating done
+[1.008s] -- Build files have been written to: /home/lx/go2/build/champ_base
+[1.017s] Invoked command in '/home/lx/go2/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_base
+[1.018s] Invoking command in '/home/lx/go2/build/champ_base': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/go2/build/champ_base -- -j32 -l32
+[1.054s] [  8%] [32mBuilding CXX object CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o[0m
+[1.054s] [ 16%] [32mBuilding CXX object CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o[0m
+[1.055s] [ 25%] [32mBuilding CXX object CMakeFiles/message_relay.dir/src/message_relay.cpp.o[0m
+[8.461s] [ 33%] [32m[1mLinking CXX shared library libquadruped_controller.so[0m
+[8.865s] [ 33%] Built target quadruped_controller
+[8.878s] [ 41%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/quadruped_controller_node.cpp.o[0m
+[10.249s] [ 50%] [32m[1mLinking CXX shared library libmessage_relay.so[0m
+[10.746s] [ 50%] Built target message_relay
+[10.759s] [ 58%] [32mBuilding CXX object CMakeFiles/message_relay_node.dir/src/message_relay_node.cpp.o[0m
+[10.827s] [ 66%] [32m[1mLinking CXX executable quadruped_controller_node[0m
+[11.011s] [ 66%] Built target quadruped_controller_node
+[11.565s] [ 75%] [32m[1mLinking CXX shared library libstate_estimation.so[0m
+[12.118s] [ 75%] Built target state_estimation
+[12.133s] [ 83%] [32mBuilding CXX object CMakeFiles/state_estimation_node.dir/src/state_estimation_node.cpp.o[0m
+[12.720s] [ 91%] [32m[1mLinking CXX executable message_relay_node[0m
+[12.921s] [ 91%] Built target message_relay_node
+[15.368s] [100%] [32m[1mLinking CXX executable state_estimation_node[0m
+[15.583s] [100%] Built target state_estimation_node
+[15.591s] Invoked command in '/home/lx/go2/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/go2/build/champ_base -- -j32 -l32
+[15.591s] Invoking command in '/home/lx/go2/build/champ_base': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/go2/build/champ_base
+[15.597s] -- Install configuration: ""
+[15.597s] -- Execute custom install script
+[15.597s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/config/ekf/base_to_footprint.yaml
+[15.603s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/config/ekf/footprint_to_odom.yaml
+[15.608s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/config/velocity_smoother/velocity_smoother.yaml
+[15.614s] -- Symlinking: /home/lx/go2/install/champ_base/lib/libquadruped_controller.so
+[15.619s] -- Symlinking: /home/lx/go2/install/champ_base/bin/quadruped_controller_node
+[15.626s] -- Symlinking: /home/lx/go2/install/champ_base/lib/libmessage_relay.so
+[15.631s] -- Symlinking: /home/lx/go2/install/champ_base/bin/message_relay_node
+[15.636s] -- Symlinking: /home/lx/go2/install/champ_base/lib/libstate_estimation.so
+[15.642s] -- Symlinking: /home/lx/go2/install/champ_base/bin/state_estimation_node
+[15.648s] -- Symlinking: /home/lx/go2/install/champ_base/lib/champ_base/quadruped_controller_node
+[15.653s] -- Symlinking: /home/lx/go2/install/champ_base/lib/champ_base/message_relay_node
+[15.658s] -- Symlinking: /home/lx/go2/install/champ_base/lib/champ_base/state_estimation_node
+[15.664s] -- Symlinking: /home/lx/go2/install/champ_base/share/ament_index/resource_index/package_run_dependencies/champ_base
+[15.669s] -- Symlinking: /home/lx/go2/install/champ_base/share/ament_index/resource_index/parent_prefix_path/champ_base
+[15.675s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/environment/ament_prefix_path.sh
+[15.680s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/environment/ament_prefix_path.dsv
+[15.685s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/environment/path.sh
+[15.691s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/environment/path.dsv
+[15.696s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/local_setup.bash
+[15.702s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/local_setup.sh
+[15.707s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/local_setup.zsh
+[15.713s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/local_setup.dsv
+[15.718s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/package.dsv
+[15.723s] -- Symlinking: /home/lx/go2/install/champ_base/share/ament_index/resource_index/packages/champ_base
+[15.729s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.734s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.739s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/cmake/champ_baseConfig.cmake
+[15.744s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/cmake/champ_baseConfig-version.cmake
+[15.750s] -- Symlinking: /home/lx/go2/install/champ_base/share/champ_base/package.xml
+[15.757s] Invoked command in '/home/lx/go2/build/champ_base' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/go2/build/champ_base

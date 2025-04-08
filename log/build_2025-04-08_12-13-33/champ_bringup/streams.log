@@ -1,0 +1,78 @@
+[0.008s] Invoking command in '/home/lx/go2/build/champ_bringup': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_bringup
+[0.041s] -- The C compiler identification is GNU 11.4.0
+[0.074s] -- The CXX compiler identification is GNU 11.4.0
+[0.078s] -- Detecting C compiler ABI info
+[0.124s] -- Detecting C compiler ABI info - done
+[0.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.128s] -- Detecting C compile features
+[0.128s] -- Detecting C compile features - done
+[0.130s] -- Detecting CXX compiler ABI info
+[0.180s] -- Detecting CXX compiler ABI info - done
+[0.184s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.184s] -- Detecting CXX compile features
+[0.184s] -- Detecting CXX compile features - done
+[0.186s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.272s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.305s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.411s] -- Configuring done
+[0.414s] -- Generating done
+[0.415s] -- Build files have been written to: /home/lx/go2/build/champ_bringup
+[0.418s] Invoked command in '/home/lx/go2/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_bringup
+[0.419s] Invoking command in '/home/lx/go2/build/champ_bringup': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/go2/build/champ_bringup -- -j32 -l32
+[0.455s] Built target ament_cmake_python_symlink_champ_bringup
+[0.589s] running egg_info
+[0.589s] creating champ_bringup.egg-info
+[0.589s] writing champ_bringup.egg-info/PKG-INFO
+[0.590s] writing dependency_links to champ_bringup.egg-info/dependency_links.txt
+[0.590s] writing top-level names to champ_bringup.egg-info/top_level.txt
+[0.590s] writing manifest file 'champ_bringup.egg-info/SOURCES.txt'
+[0.591s] reading manifest file 'champ_bringup.egg-info/SOURCES.txt'
+[0.591s] writing manifest file 'champ_bringup.egg-info/SOURCES.txt'
+[0.607s] Built target ament_cmake_python_build_champ_bringup_egg
+[0.614s] Invoked command in '/home/lx/go2/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lx/go2/build/champ_bringup -- -j32 -l32
+[0.615s] Invoking command in '/home/lx/go2/build/champ_bringup': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/go2/build/champ_bringup
+[0.620s] -- Install configuration: ""
+[0.620s] -- Execute custom install script
+[0.620s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/bringup.launch
+[0.625s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/bringup.launch.py
+[0.631s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/d435.launch
+[0.636s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/hokuyo.launch
+[0.641s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/kinect.launch
+[0.646s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/lms1xx.launch
+[0.651s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/realsense.launch
+[0.656s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/rplidar.launch
+[0.661s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/sim.launch
+[0.667s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/sweep.launch
+[0.674s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/xv11.launch
+[0.680s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/laser/ydlidar.launch
+[0.686s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/include/velocity_smoother.launch
+[0.691s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/joints_gui.launch
+[0.696s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/launch/joints_gui.launch.py
+[0.702s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/pythonpath.sh
+[0.707s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/pythonpath.dsv
+[0.713s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup-0.1.0-py3.10.egg-info/PKG-INFO
+[0.719s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup-0.1.0-py3.10.egg-info/SOURCES.txt
+[0.724s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup-0.1.0-py3.10.egg-info/dependency_links.txt
+[0.730s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup-0.1.0-py3.10.egg-info/top_level.txt
+[0.736s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup/__init__.py
+[0.741s] -- Symlinking: /home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup/joint_calibrator_relay.py
+[0.747s] -- Symlinking: /home/lx/go2/install/champ_bringup/lib/champ_bringup/joint_calibrator_relay.py
+[0.752s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/ament_index/resource_index/package_run_dependencies/champ_bringup
+[0.757s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/ament_index/resource_index/parent_prefix_path/champ_bringup
+[0.763s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/ament_prefix_path.sh
+[0.769s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/ament_prefix_path.dsv
+[0.774s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/path.sh
+[0.779s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/environment/path.dsv
+[0.785s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/local_setup.bash
+[0.790s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/local_setup.sh
+[0.795s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/local_setup.zsh
+[0.801s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/local_setup.dsv
+[0.807s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/package.dsv
+[0.812s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/ament_index/resource_index/packages/champ_bringup
+[0.818s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/cmake/champ_bringupConfig.cmake
+[0.823s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/cmake/champ_bringupConfig-version.cmake
+[0.829s] -- Symlinking: /home/lx/go2/install/champ_bringup/share/champ_bringup/package.xml
+[0.852s] Listing '/home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup'...
+[0.852s] Compiling '/home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup/__init__.py'...
+[0.852s] Compiling '/home/lx/go2/install/champ_bringup/local/lib/python3.10/dist-packages/champ_bringup/joint_calibrator_relay.py'...
+[0.856s] Invoked command in '/home/lx/go2/build/champ_bringup' returned '0': AMENT_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lx/go2/install/champ_base:/home/lx/go2/install/champ_msgs:/home/lx/go2/install/champ_description:/home/lx/go2/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/lx/go2/install/champ_base/lib:/home/lx/go2/install/champ_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/lx/go2/install/champ_base/bin:${PATH} PYTHONPATH=/home/lx/go2/install/champ_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lx/go2/build/champ_bringup

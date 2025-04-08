@@ -1,0 +1,109 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lx/go2/build/go2_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/config/_joint_names_go2_description.yaml
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/config/_robot_control.yaml
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/config/ros_control/ros_control.yaml
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/base.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/calf.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/calf_mirror.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/foot.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/hip.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/thigh.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/dae/thigh_mirror.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/launch/description.launch.py
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/launch/gazebo.launch.py
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/launch/my_world.launch.py
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/calf.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/calf_mirror.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/foot.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/hip.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/hokuyo.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_d435.stl
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_r200/materials/textures/realsense_diffuse.png
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_r200/meshes/realsense.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_r200/model.config
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_r200/model.sdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/realsense_t265.stl
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/thigh.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/thigh_mirror.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/meshes/trunk.dae
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904144240.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904182446.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193628.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193644.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193653.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193705.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193710.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230904193711.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112047.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112143.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112217.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112735.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112749.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112752.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905112944.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113000.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113059.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113633.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113754.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113755.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113839.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905113840.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905114759.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905114819.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115021.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115022.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115040.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115215.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115226.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115300.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/.history/go2_description_20230905115313.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/Amended_collision_model.png
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/Normal_collision_model.png
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/urdf/go2_description.urdf
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/const.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/depthcam.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/gazebo.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/inertia_calc.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/laser.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/leg.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/materials.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/robot.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/robot_VLP.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/tracker.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/transmission.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/xacro/velodyne.xacro
+-- Symlinking: /home/lx/go2/install/go2_description/share/ament_index/resource_index/package_run_dependencies/go2_description
+-- Symlinking: /home/lx/go2/install/go2_description/share/ament_index/resource_index/parent_prefix_path/go2_description
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/environment/path.sh
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/environment/path.dsv
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/local_setup.bash
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/local_setup.sh
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/local_setup.zsh
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/local_setup.dsv
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/package.dsv
+-- Symlinking: /home/lx/go2/install/go2_description/share/ament_index/resource_index/packages/go2_description
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/cmake/go2_descriptionConfig.cmake
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/cmake/go2_descriptionConfig-version.cmake
+-- Symlinking: /home/lx/go2/install/go2_description/share/go2_description/package.xml

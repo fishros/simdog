@@ -1,0 +1,4 @@
+source;share/realsense_ros_gazebo/local_setup.bash
+source;share/realsense_ros_gazebo/local_setup.dsv
+source;share/realsense_ros_gazebo/local_setup.sh
+source;share/realsense_ros_gazebo/local_setup.zsh

@@ -1,0 +1,4 @@
+Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+Invoked command in '/home/lx/go2/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ -- -j32 -l32
+Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ
+Invoked command in '/home/lx/go2/build/champ' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ

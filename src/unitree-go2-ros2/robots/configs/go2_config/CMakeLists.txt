@@ -4,7 +4,7 @@ project(go2_config)
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch config maps worlds photos models
+  DIRECTORY launch config maps worlds photos 
   DESTINATION share/${PROJECT_NAME}
 )
 

@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_msgs/rosidl_generator_py/champ_msgs/__init__.py

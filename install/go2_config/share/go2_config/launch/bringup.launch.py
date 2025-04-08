@@ -1,0 +1,1 @@
+/home/lx/go2/src/unitree-go2-ros2/robots/configs/go2_config/launch/bringup.launch.py

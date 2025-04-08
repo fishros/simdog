@@ -1,0 +1,4 @@
+source;share/lio_sam/local_setup.bash
+source;share/lio_sam/local_setup.dsv
+source;share/lio_sam/local_setup.sh
+source;share/lio_sam/local_setup.zsh

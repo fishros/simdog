@@ -1,0 +1,1 @@
+/home/lx/go2/build/champ_description/ament_cmake_core/champ_descriptionConfig-version.cmake

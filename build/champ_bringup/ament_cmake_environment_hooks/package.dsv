@@ -1,0 +1,4 @@
+source;share/champ_bringup/local_setup.bash
+source;share/champ_bringup/local_setup.dsv
+source;share/champ_bringup/local_setup.sh
+source;share/champ_bringup/local_setup.zsh
