@@ -47,9 +47,7 @@ sudo apt install libgtsam-dev libgtsam-unstable-dev
 ### 3.克隆代码
 
 ```bash
-mkdir ~/go2_ws
-cd go2_ws
-git clone https://github.com/fishros/simdog.git -b main
+git clone https://github.com/fishros/simdog.git -b main -o go2_ws
 sudo rosdepc init
 rosdepc update
 rosdepc install --from-paths src --ignore-src -r -y
