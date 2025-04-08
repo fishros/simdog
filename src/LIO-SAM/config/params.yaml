@@ -1,0 +1,84 @@
+/**:
+  ros__parameters:
+
+    # Topics
+    pointCloudTopic: "/velodyne_points"           # 匹配Gazebo中的激光雷达话题
+    imuTopic: "/imu/data"                         # 匹配Gazebo中的IMU话题
+    odomTopic: "odometry/imu"                     # IMU预积分里程计
+    
+    # Frames
+    lidarFrame: "velodyne"                        # 匹配TF树中的激光雷达坐标系
+    baselinkFrame: "base_link"                    # 匹配TF树中的机器人基础坐标系
+    odometryFrame: "odom_a"                         # 匹配TF树中的里程计坐标系
+    mapFrame: "map"                               # 地图坐标系
+
+    # GPS Settings
+    useImuHeadingInitialization: false            
+    useGpsElevation: false                     
+    gpsCovThreshold: 2.0                      
+    poseCovThreshold: 25.0                    
+
+    # Export settings
+    savePCD: true                              
+    savePCDDirectory: "/home/lx/go2/src/LIO-SAM/map"         
+
+    # Sensor Settings - 匹配仿真环境
+    sensor: velodyne                              
+    N_SCAN: 16                                    
+    Horizon_SCAN: 1800                            
+    downsampleRate: 1                             
+    lidarMinRange: 0.9                            # 匹配仿真设置
+    lidarMaxRange: 100.0                          
+
+    # IMU Settings - 调整为仿真环境的参数
+    imuAccNoise: 0.05                            # 降低加速度计噪声
+    imuGyrNoise: 0.005                           # 降低陀螺仪噪声
+    imuAccBiasN: 0.00001                         # 降低加速度计偏差噪声
+    imuGyrBiasN: 0.00001                         # 降低陀螺仪偏差噪声
+    imuGravity: 9.80511
+    imuRPYWeight: 0.01
+
+    # 外参设置 - 匹配仿真环境
+    extrinsicTrans: [0.2, 0.0, 0.118]             
+    extrinsicRot: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    extrinsicRPY: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    # extrinsicRPY: [0.0, 0.0, 0.0]
+
+    # LOAM Feature Threshold - 提高特征提取的稳定性
+    edgeThreshold: 1.0                           # 提高边缘特征阈值
+    surfThreshold: 0.1                           # 提高平面特征阈值
+    edgeFeatureMinValidNum: 10                   # 增加最小有效边缘特征数量
+    surfFeatureMinValidNum: 100                  # 增加最小有效平面特征数量
+
+    # Voxel Filter Parameters - 调整降采样参数
+    odometrySurfLeafSize: 0.02                    # 增大叶大小以提高实时性
+    mappingCornerLeafSize: 0.1                   
+    mappingSurfLeafSize: 0.2                     
+
+    # Robot Motion Constraint
+    z_tollerance: 1000.0                            # 减小Z方向容差，因为是四足机器人
+    rotation_tollerance: 1000.0                     # 减小旋转容差
+
+    # CPU Params
+    numberOfCores: 4                             
+    mappingProcessInterval: 0.15                 # 减小间隔以提高精度
+
+    # Surrounding map
+    surroundingkeyframeAddingDistThreshold: 1.0   # 增大阈值，减少关键帧数量
+    surroundingkeyframeAddingAngleThreshold: 0.2  
+    surroundingKeyframeDensity: 2.0              # 降低密度以提高效率
+    surroundingKeyframeSearchRadius: 10.0         # 减小搜索半径
+
+    # Loop closure - 初始阶段禁用
+    loopClosureEnableFlag: false                 
+    loopClosureFrequency: 1.0
+    surroundingKeyframeSize: 50
+    historyKeyframeSearchRadius: 10.0
+    historyKeyframeSearchTimeDiff: 30.0
+    historyKeyframeSearchNum: 25
+    historyKeyframeFitnessScore: 0.3
+
+    # Visualization
+    globalMapVisualizationSearchRadius: 50.0      # 减小可视化范围以提高性能
+    globalMapVisualizationPoseDensity: 10.0       
+    globalMapVisualizationLeafSize: 1.0           # 增大叶大小以提高显示效率

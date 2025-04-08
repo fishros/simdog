@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lx/go2/install/champ_msgs/include/**",
+        "/home/lx/go2/install/champ/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/lx/go2/src/unitree-go2-ros2/champ/champ/include/**",
+        "/home/lx/go2/src/unitree-go2-ros2/champ/champ_base/include/**",
+        "/home/lx/go2/src/unitree-go2-ros2/champ/champ_config/include/**",
+        "/home/lx/go2/src/unitree-go2-ros2/robots/configs/go2_config/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
