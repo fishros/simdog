@@ -1,1 +1,0 @@
-/home/lx/go2/build/lio_sam/rosidl_generator_c/lio_sam/msg/cloud_info.h

@@ -1,1 +1,0 @@
-/home/lx/go2/build/champ_msgs/rosidl_generator_c/champ_msgs/msg/detail/point__functions.h

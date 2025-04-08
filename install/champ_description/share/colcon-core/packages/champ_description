@@ -1,1 +1,0 @@
-gazebo_plugins:joint_state_publisher:launch_ros:robot_state_publisher:rviz2:urdf:velodyne_gazebo_plugins:xacro

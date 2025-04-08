@@ -1,9 +1,0 @@
-/home/lx/go2/build/champ_teleop/CMakeFiles/uninstall.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/champ_teleop_uninstall.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/test.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/edit_cache.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/rebuild_cache.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/list_install_components.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/install.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/install/local.dir
-/home/lx/go2/build/champ_teleop/CMakeFiles/install/strip.dir

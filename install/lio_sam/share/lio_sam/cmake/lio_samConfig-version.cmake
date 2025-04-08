@@ -1,1 +1,0 @@
-/home/lx/go2/build/lio_sam/ament_cmake_core/lio_samConfig-version.cmake

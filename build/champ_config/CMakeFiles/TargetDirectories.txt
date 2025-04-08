@@ -1,9 +1,0 @@
-/home/lx/go2/build/champ_config/CMakeFiles/uninstall.dir
-/home/lx/go2/build/champ_config/CMakeFiles/champ_config_uninstall.dir
-/home/lx/go2/build/champ_config/CMakeFiles/test.dir
-/home/lx/go2/build/champ_config/CMakeFiles/edit_cache.dir
-/home/lx/go2/build/champ_config/CMakeFiles/rebuild_cache.dir
-/home/lx/go2/build/champ_config/CMakeFiles/list_install_components.dir
-/home/lx/go2/build/champ_config/CMakeFiles/install.dir
-/home/lx/go2/build/champ_config/CMakeFiles/install/local.dir
-/home/lx/go2/build/champ_config/CMakeFiles/install/strip.dir

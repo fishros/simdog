@@ -1,1 +1,0 @@
-/home/lx/go2/build/champ_bringup/ament_cmake_core/champ_bringupConfig.cmake

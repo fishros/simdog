@@ -1,3 +1,0 @@
-source;share/champ_bringup/environment/ament_prefix_path.sh
-source;share/champ_bringup/environment/path.sh
-source;share/champ_bringup/environment/pythonpath.sh

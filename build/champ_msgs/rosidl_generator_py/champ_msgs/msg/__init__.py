@@ -1,9 +1,0 @@
-from champ_msgs.msg._contacts import Contacts  # noqa: F401
-from champ_msgs.msg._contacts_stamped import ContactsStamped  # noqa: F401
-from champ_msgs.msg._imu import Imu  # noqa: F401
-from champ_msgs.msg._joints import Joints  # noqa: F401
-from champ_msgs.msg._pid import PID  # noqa: F401
-from champ_msgs.msg._point import Point  # noqa: F401
-from champ_msgs.msg._point_array import PointArray  # noqa: F401
-from champ_msgs.msg._pose import Pose  # noqa: F401
-from champ_msgs.msg._velocities import Velocities  # noqa: F401

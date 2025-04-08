@@ -1,1 +1,0 @@
-/home/lx/go2/build/lio_sam/rosidl_typesupport_fastrtps_c/lio_sam/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

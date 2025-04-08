@@ -1,6 +1,0 @@
-Invoking command in '/home/lx/go2/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_teleop
-Invoked command in '/home/lx/go2/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ_teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ_teleop
-Invoking command in '/home/lx/go2/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_teleop -- -j32 -l32
-Invoked command in '/home/lx/go2/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lx/go2/build/champ_teleop -- -j32 -l32
-Invoking command in '/home/lx/go2/build/champ_teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_teleop
-Invoked command in '/home/lx/go2/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lx/go2/build/champ_teleop

@@ -1,1 +1,0 @@
-/home/lx/go2/build/go2_config/ament_cmake_environment_hooks/local_setup.sh

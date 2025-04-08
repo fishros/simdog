@@ -1,1 +1,0 @@
-/home/lx/go2/src/unitree-go2-ros2/champ/champ/include/champ/body_controller/body_controller.h

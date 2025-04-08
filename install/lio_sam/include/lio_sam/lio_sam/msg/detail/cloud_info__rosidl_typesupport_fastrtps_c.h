@@ -1,1 +1,0 @@
-/home/lx/go2/build/lio_sam/rosidl_typesupport_fastrtps_c/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h

@@ -1,1 +1,0 @@
-/home/lx/go2/src/unitree-go2-ros2/champ/champ_gazebo/scripts/imu_sensor.py

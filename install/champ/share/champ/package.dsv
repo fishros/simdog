@@ -1,8 +1,0 @@
-source;share/champ/hook/cmake_prefix_path.ps1
-source;share/champ/hook/cmake_prefix_path.dsv
-source;share/champ/hook/cmake_prefix_path.sh
-source;share/champ/local_setup.bash
-source;share/champ/local_setup.dsv
-source;share/champ/local_setup.ps1
-source;share/champ/local_setup.sh
-source;share/champ/local_setup.zsh

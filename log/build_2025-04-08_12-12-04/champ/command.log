@@ -1,1 +1,0 @@
-Invoking command in '/home/lx/go2/build/champ': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lx/go2/src/unitree-go2-ros2/champ/champ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lx/go2/install/champ

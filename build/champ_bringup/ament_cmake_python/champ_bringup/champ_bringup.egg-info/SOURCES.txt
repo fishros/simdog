@@ -1,7 +1,0 @@
-setup.py
-champ_bringup/__init__.py
-champ_bringup/joint_calibrator_relay.py
-champ_bringup.egg-info/PKG-INFO
-champ_bringup.egg-info/SOURCES.txt
-champ_bringup.egg-info/dependency_links.txt
-champ_bringup.egg-info/top_level.txt

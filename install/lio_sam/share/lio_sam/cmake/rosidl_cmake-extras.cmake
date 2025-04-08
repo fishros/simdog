@@ -1,1 +1,0 @@
-/home/lx/go2/build/lio_sam/rosidl_cmake/rosidl_cmake-extras.cmake

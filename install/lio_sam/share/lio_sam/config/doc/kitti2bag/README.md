@@ -1,1 +1,0 @@
-/home/lx/go2/src/LIO-SAM/config/doc/kitti2bag/README.md

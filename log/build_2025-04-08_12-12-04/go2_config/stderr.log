@@ -1,8 +1,0 @@
-[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
-  ament_cmake_symlink_install_directory() can't find
-  '/home/lx/go2/src/unitree-go2-ros2/robots/configs/go2_config/models'
-Call Stack (most recent call first):
-  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
-  cmake_install.cmake:46 (include)
-
-[0m

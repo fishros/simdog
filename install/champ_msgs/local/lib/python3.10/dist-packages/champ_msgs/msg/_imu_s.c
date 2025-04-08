@@ -1,1 +1,0 @@
-/home/lx/go2/build/champ_msgs/rosidl_generator_py/champ_msgs/msg/_imu_s.c
