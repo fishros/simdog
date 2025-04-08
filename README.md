@@ -32,10 +32,10 @@ sudo apt-get install ros-humble-velodyne-description
 安装liosam依赖
 
 ```bash
-sudo apt install ros-<ros2-version>-perception-pcl \
-  	   ros-<ros2-version>-pcl-msgs \
-  	   ros-<ros2-version>-vision-opencv \
-  	   ros-<ros2-version>-xacro
+sudo apt install ros-humble-perception-pcl \
+  	   ros-humble-pcl-msgs \
+  	   ros-humble-vision-opencv \
+  	   ros-humble-xacro
 ```
 
 ```bash
