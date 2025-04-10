@@ -16,6 +16,7 @@ from geometry_msgs.msg import Pose as Pose
 from geometry_msgs.msg import Twist
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
+import math
 
 def quaternion_from_euler(roll, pitch, yaw):
     """
@@ -50,8 +51,8 @@ class Teleop(Node):
 
         self.declare_parameter("gait/swing_height", 0)
         self.declare_parameter("gait/nominal_height", 0)
-        self.declare_parameter("speed", 0.5)
-        self.declare_parameter("turn", 1.0)
+        self.declare_parameter("speed", 1.5)
+        self.declare_parameter("turn", 2.0)
         
         self.swing_height = self.get_parameter("gait/swing_height").value
         self.nominal_height = self.get_parameter("gait/nominal_height").value

@@ -4,12 +4,12 @@
     # Topics
     pointCloudTopic: "/velodyne_points"           # 匹配Gazebo中的激光雷达话题
     imuTopic: "/imu/data"                         # 匹配Gazebo中的IMU话题
-    odomTopic: "odometry/imu"                     # IMU预积分里程计
+    odomTopic: "/odom"                     
     
     # Frames
     lidarFrame: "velodyne"                        # 匹配TF树中的激光雷达坐标系
-    baselinkFrame: "base_link"                    # 匹配TF树中的机器人基础坐标系
-    odometryFrame: "odom_a"                         # 匹配TF树中的里程计坐标系
+    baselinkFrame: "base_footprint"                    # 匹配TF树中的机器人基础坐标系
+    odometryFrame: "odom"                         # 匹配TF树中的里程计坐标系
     mapFrame: "map"                               # 地图坐标系
 
     # GPS Settings

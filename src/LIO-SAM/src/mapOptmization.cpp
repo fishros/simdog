@@ -1632,88 +1632,219 @@ public:
 
         globalPath.poses.push_back(pose_stamped);
     }
-
     void publishOdometry()
     {
-        // Publish odometry for ROS (global)
+        // 发布全局里程计消息
+        // 创建ROS里程计消息来表示全局位姿
         nav_msgs::msg::Odometry laserOdometryROS;
+        
+        // 设置里程计消息的时间戳为当前激光信息时间戳
         laserOdometryROS.header.stamp = timeLaserInfoStamp;
+        
+        // 设置里程计消息的参考坐标系
         laserOdometryROS.header.frame_id = odometryFrame;
+        
+        // 设置子坐标系ID，表示里程计计算的坐标系
         laserOdometryROS.child_frame_id = "odom_mapping";
+        
+        // 从变换数组中设置位置坐标
+        // transformTobeMapped[3,4,5]分别代表x, y, z坐标
         laserOdometryROS.pose.pose.position.x = transformTobeMapped[3];
         laserOdometryROS.pose.pose.position.y = transformTobeMapped[4];
         laserOdometryROS.pose.pose.position.z = transformTobeMapped[5];
+        
+        // 创建tf2四元数，将欧拉角转换为四元数表示
+        // transformTobeMapped[0,1,2]分别代表横滚角、俯仰角、偏航角
         tf2::Quaternion quat_tf;
         quat_tf.setRPY(transformTobeMapped[0], transformTobeMapped[1], transformTobeMapped[2]);
+        
+        // 将tf2四元数转换为ROS几何消息四元数
         geometry_msgs::msg::Quaternion quat_msg;
         tf2::convert(quat_tf, quat_msg);
+        
+        // 设置里程计消息的方向
         laserOdometryROS.pose.pose.orientation = quat_msg;
+        
+        // 发布全局里程计消息
         pubLaserOdometryGlobal->publish(laserOdometryROS);
-
-        // Publish TF
+    
+        // 发布坐标变换（TF）
+        // 重新创建用于变换的四元数
         quat_tf.setRPY(transformTobeMapped[0], transformTobeMapped[1], transformTobeMapped[2]);
+        
+        // 使用四元数和平移创建tf2变换
         tf2::Transform t_odom_to_lidar = tf2::Transform(quat_tf, tf2::Vector3(transformTobeMapped[3], transformTobeMapped[4], transformTobeMapped[5]));
+        
+        // 将ROS时间转换为tf2时间点
         tf2::TimePoint time_point = tf2_ros::fromRclcpp(timeLaserInfoStamp);
+        
+        // 创建带有时间和坐标系信息的带时间戳变换
         tf2::Stamped<tf2::Transform> temp_odom_to_lidar(t_odom_to_lidar, time_point, odometryFrame);
+        
+        // 将带时间戳变换转换为ROS变换消息
         geometry_msgs::msg::TransformStamped trans_odom_to_lidar;
         tf2::convert(temp_odom_to_lidar, trans_odom_to_lidar);
+        
+        // 设置变换的子坐标系ID
         trans_odom_to_lidar.child_frame_id = "lidar_link";
+        
+        // 广播变换
         br->sendTransform(trans_odom_to_lidar);
-
-        // Publish odometry for ROS (incremental)
+    
+        // 发布增量里程计
+        // 使用静态变量在函数调用间保持状态
         static bool lastIncreOdomPubFlag = false;
-        static nav_msgs::msg::Odometry laserOdomIncremental; // incremental odometry msg
-        static Eigen::Affine3f increOdomAffine; // incremental odometry in affine
+        static nav_msgs::msg::Odometry laserOdomIncremental; // 增量里程计消息
+        static Eigen::Affine3f increOdomAffine; // 仿射变换表示的增量里程计
+        
+        // 第一次发布增量里程计
         if (lastIncreOdomPubFlag == false)
         {
             lastIncreOdomPubFlag = true;
+            // 使用全局里程计初始化增量里程计
             laserOdomIncremental = laserOdometryROS;
             increOdomAffine = trans2Affine3f(transformTobeMapped);
-        } else {
+        } 
+        else {
+            // 计算增量变换
             Eigen::Affine3f affineIncre = incrementalOdometryAffineFront.inverse() * incrementalOdometryAffineBack;
             increOdomAffine = increOdomAffine * affineIncre;
+            
+            // 从增量变换中提取平移和旋转
             float x, y, z, roll, pitch, yaw;
-            pcl::getTranslationAndEulerAngles (increOdomAffine, x, y, z, roll, pitch, yaw);
+            pcl::getTranslationAndEulerAngles(increOdomAffine, x, y, z, roll, pitch, yaw);
+            
+            // 可选的IMU辅助方向校正
             if (cloudInfo.imu_available == true)
             {
+                // 仅在俯仰角处于小范围时应用校正
                 if (std::abs(cloudInfo.imu_pitch_init) < 1.4)
                 {
                     double imuWeight = 0.1;
                     tf2::Quaternion imuQuaternion;
                     tf2::Quaternion transformQuaternion;
                     double rollMid, pitchMid, yawMid;
-
-                    // slerp roll
+    
+                    // 横滚角的球面线性插值（Slerp）
                     transformQuaternion.setRPY(roll, 0, 0);
                     imuQuaternion.setRPY(cloudInfo.imu_roll_init, 0, 0);
                     tf2::Matrix3x3(transformQuaternion.slerp(imuQuaternion, imuWeight)).getRPY(rollMid, pitchMid, yawMid);
                     roll = rollMid;
-
-                    // slerp pitch
+    
+                    // 俯仰角的球面线性插值
                     transformQuaternion.setRPY(0, pitch, 0);
                     imuQuaternion.setRPY(0, cloudInfo.imu_pitch_init, 0);
                     tf2::Matrix3x3(transformQuaternion.slerp(imuQuaternion, imuWeight)).getRPY(rollMid, pitchMid, yawMid);
                     pitch = pitchMid;
                 }
             }
+            
+            // 更新增量里程计消息
             laserOdomIncremental.header.stamp = timeLaserInfoStamp;
             laserOdomIncremental.header.frame_id = odometryFrame;
             laserOdomIncremental.child_frame_id = "odom_mapping";
             laserOdomIncremental.pose.pose.position.x = x;
             laserOdomIncremental.pose.pose.position.y = y;
             laserOdomIncremental.pose.pose.position.z = z;
+            
+            // 将更新后的方向转换为四元数
             tf2::Quaternion quat_tf;
             quat_tf.setRPY(roll, pitch, yaw);
             geometry_msgs::msg::Quaternion quat_msg;
             tf2::convert(quat_tf, quat_msg);
             laserOdomIncremental.pose.pose.orientation = quat_msg;
+            
+            // 根据退化状态设置协方差
             if (isDegenerate)
                 laserOdomIncremental.pose.covariance[0] = 1;
             else
                 laserOdomIncremental.pose.covariance[0] = 0;
         }
+        
+        // 发布增量里程计消息
         pubLaserOdometryIncremental->publish(laserOdomIncremental);
     }
+    // void publishOdometry()
+    // {
+    //     // Publish odometry for ROS (global)
+    //     nav_msgs::msg::Odometry laserOdometryROS;
+    //     laserOdometryROS.header.stamp = timeLaserInfoStamp;
+    //     laserOdometryROS.header.frame_id = odometryFrame;
+    //     laserOdometryROS.child_frame_id = "odom_mapping";
+    //     laserOdometryROS.pose.pose.position.x = transformTobeMapped[3];
+    //     laserOdometryROS.pose.pose.position.y = transformTobeMapped[4];
+    //     laserOdometryROS.pose.pose.position.z = transformTobeMapped[5];
+    //     tf2::Quaternion quat_tf;
+    //     quat_tf.setRPY(transformTobeMapped[0], transformTobeMapped[1], transformTobeMapped[2]);
+    //     geometry_msgs::msg::Quaternion quat_msg;
+    //     tf2::convert(quat_tf, quat_msg);
+    //     laserOdometryROS.pose.pose.orientation = quat_msg;
+    //     pubLaserOdometryGlobal->publish(laserOdometryROS);
+
+    //     // Publish TF
+    //     quat_tf.setRPY(transformTobeMapped[0], transformTobeMapped[1], transformTobeMapped[2]);
+    //     tf2::Transform t_odom_to_lidar = tf2::Transform(quat_tf, tf2::Vector3(transformTobeMapped[3], transformTobeMapped[4], transformTobeMapped[5]));
+    //     tf2::TimePoint time_point = tf2_ros::fromRclcpp(timeLaserInfoStamp);
+    //     tf2::Stamped<tf2::Transform> temp_odom_to_lidar(t_odom_to_lidar, time_point, odometryFrame);
+    //     geometry_msgs::msg::TransformStamped trans_odom_to_lidar;
+    //     tf2::convert(temp_odom_to_lidar, trans_odom_to_lidar);
+    //     trans_odom_to_lidar.child_frame_id = "lidar_link";
+    //     br->sendTransform(trans_odom_to_lidar);
+
+    //     // Publish odometry for ROS (incremental)
+    //     static bool lastIncreOdomPubFlag = false;
+    //     static nav_msgs::msg::Odometry laserOdomIncremental; // incremental odometry msg
+    //     static Eigen::Affine3f increOdomAffine; // incremental odometry in affine
+    //     if (lastIncreOdomPubFlag == false)
+    //     {
+    //         lastIncreOdomPubFlag = true;
+    //         laserOdomIncremental = laserOdometryROS;
+    //         increOdomAffine = trans2Affine3f(transformTobeMapped);
+    //     } else {
+    //         Eigen::Affine3f affineIncre = incrementalOdometryAffineFront.inverse() * incrementalOdometryAffineBack;
+    //         increOdomAffine = increOdomAffine * affineIncre;
+    //         float x, y, z, roll, pitch, yaw;
+    //         pcl::getTranslationAndEulerAngles (increOdomAffine, x, y, z, roll, pitch, yaw);
+    //         if (cloudInfo.imu_available == true)
+    //         {
+    //             if (std::abs(cloudInfo.imu_pitch_init) < 1.4)
+    //             {
+    //                 double imuWeight = 0.1;
+    //                 tf2::Quaternion imuQuaternion;
+    //                 tf2::Quaternion transformQuaternion;
+    //                 double rollMid, pitchMid, yawMid;
+
+    //                 // slerp roll
+    //                 transformQuaternion.setRPY(roll, 0, 0);
+    //                 imuQuaternion.setRPY(cloudInfo.imu_roll_init, 0, 0);
+    //                 tf2::Matrix3x3(transformQuaternion.slerp(imuQuaternion, imuWeight)).getRPY(rollMid, pitchMid, yawMid);
+    //                 roll = rollMid;
+
+    //                 // slerp pitch
+    //                 transformQuaternion.setRPY(0, pitch, 0);
+    //                 imuQuaternion.setRPY(0, cloudInfo.imu_pitch_init, 0);
+    //                 tf2::Matrix3x3(transformQuaternion.slerp(imuQuaternion, imuWeight)).getRPY(rollMid, pitchMid, yawMid);
+    //                 pitch = pitchMid;
+    //             }
+    //         }
+    //         laserOdomIncremental.header.stamp = timeLaserInfoStamp;
+    //         laserOdomIncremental.header.frame_id = odometryFrame;
+    //         laserOdomIncremental.child_frame_id = "odom_mapping";
+    //         laserOdomIncremental.pose.pose.position.x = x;
+    //         laserOdomIncremental.pose.pose.position.y = y;
+    //         laserOdomIncremental.pose.pose.position.z = z;
+    //         tf2::Quaternion quat_tf;
+    //         quat_tf.setRPY(roll, pitch, yaw);
+    //         geometry_msgs::msg::Quaternion quat_msg;
+    //         tf2::convert(quat_tf, quat_msg);
+    //         laserOdomIncremental.pose.pose.orientation = quat_msg;
+    //         if (isDegenerate)
+    //             laserOdomIncremental.pose.covariance[0] = 1;
+    //         else
+    //             laserOdomIncremental.pose.covariance[0] = 0;
+    //     }
+    //     pubLaserOdometryIncremental->publish(laserOdomIncremental);
+    // }
 
     void publishFrames()
     {

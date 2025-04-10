@@ -28,15 +28,7 @@ def generate_launch_description():
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            arguments='0.0 0.0 0.0 0.0 0.0 0.0 map odom_a'.split(' '),
-            parameters=[LaunchConfiguration('params_file'),
-                {'use_sim_time': LaunchConfiguration('use_sim_time')}],
-            output='screen'
-            ),
-         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            arguments='0.0 0.0 0.0 0.0 0.0 0.0 odom_a odom'.split(' '),
+            arguments='0.0 0.0 0.0 0.0 0.0 0.0 map odom'.split(' '),
             parameters=[LaunchConfiguration('params_file'),
                 {'use_sim_time': LaunchConfiguration('use_sim_time')}],
             output='screen'

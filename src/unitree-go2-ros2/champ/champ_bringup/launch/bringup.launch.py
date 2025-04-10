@@ -205,23 +205,23 @@ def generate_launch_description():
         remappings=[("odometry/filtered", "odom/local")],
     )
 
-    footprint_to_odom_ekf = Node(
-        package="robot_localization",
-        executable="ekf_node",
-        name="footprint_to_odom_ekf",
-        output="screen",
-        parameters=[
-            {"base_link_frame": LaunchConfiguration("base_link_frame")},
-            {"use_sim_time": LaunchConfiguration("use_sim_time")},
-            os.path.join(
-                get_package_share_directory("champ_base"),
-                "config",
-                "ekf",
-                "footprint_to_odom.yaml",
-            ),
-        ],
-        remappings=[("odometry/filtered", "odom")],
-    )
+    # footprint_to_odom_ekf = Node(
+    #     package="robot_localization",
+    #     executable="ekf_node",
+    #     name="footprint_to_odom_ekf",
+    #     output="screen",
+    #     parameters=[
+    #         {"base_link_frame": LaunchConfiguration("base_link_frame")},
+    #         {"use_sim_time": LaunchConfiguration("use_sim_time")},
+    #         os.path.join(
+    #             get_package_share_directory("champ_base"),
+    #             "config",
+    #             "ekf",
+    #             "footprint_to_odom.yaml",
+    #         ),
+    #     ],
+    #     remappings=[("odometry/filtered", "odom")],
+    # )
 
     rviz2 = Node(
         package='rviz2',
@@ -259,7 +259,7 @@ def generate_launch_description():
             quadruped_controller_node,
             state_estimator_node,
             base_to_footprint_ekf,
-            footprint_to_odom_ekf,
+            # footprint_to_odom_ekf,
             rviz2
         ]
     )
