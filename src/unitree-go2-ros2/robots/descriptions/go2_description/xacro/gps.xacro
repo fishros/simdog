@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+
+    <joint name="gps_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="gps_frame"/>
+        <origin xyz="0 0 0.07" rpy="0 0 0"/>
+    </joint>
+
+    <link name="gps_frame">
+        <visual>
+            <geometry>
+                <cylinder radius="0.05" length="0.06"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.05" length="0.06"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.1"/>
+            <origin xyz="0.0 0 0.07" rpy="0 0 0"/>
+            <inertia
+                ixx="0.000104167" ixy="0.0" ixz="0.0"
+                iyy="0.000104167" iyz="0.0"
+                izz="0.000125"/>
+        </inertial>
+    </link>
+
+
+    <gazebo reference="gps_frame">
+        <material>Gazebo/Orange</material>
+
+        <sensor name="gps" type="gps">
+          <always_on>true</always_on>
+          <update_rate>10</update_rate>
+          <pose>0 0 0 0 0 0</pose>
+          <gps>
+            <!-- <spherical_coordinates>
+            <latitude>31.2304</latitude>
+            <longitude>121.4737</longitude>
+            <elevation>10</elevation>
+            </spherical_coordinates> -->
+            <position_sensing>
+              <horizontal>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+                </noise>
+              </horizontal>
+              <vertical>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+                </noise>
+              </vertical>
+            </position_sensing>
+          </gps>
+          <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+            <ros>
+              <remapping>~/out:=/gps/fix</remapping>
+            </ros>
+          </plugin>
+        </sensor>
+
+
+    </gazebo>
+
+</robot>

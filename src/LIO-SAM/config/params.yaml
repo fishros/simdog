@@ -5,7 +5,7 @@
     pointCloudTopic: "/velodyne_points"           # 匹配Gazebo中的激光雷达话题
     imuTopic: "/imu/data"                         # 匹配Gazebo中的IMU话题
     odomTopic: "/odom"                     
-    
+    gpsTopic: "/gps/fix"                         # 匹配Gazebo中的GPS话题
     # Frames
     lidarFrame: "velodyne"                        # 匹配TF树中的激光雷达坐标系
     baselinkFrame: "base_footprint"                    # 匹配TF树中的机器人基础坐标系
@@ -13,10 +13,10 @@
     mapFrame: "map"                               # 地图坐标系
 
     # GPS Settings
-    useImuHeadingInitialization: false            
-    useGpsElevation: false                     
-    gpsCovThreshold: 2.0                      
-    poseCovThreshold: 25.0                    
+    useImuHeadingInitialization: true            
+    useGpsElevation: true                     
+    gpsCovThreshold: 0.5                      
+    poseCovThreshold: 10.0                    
 
     # Export settings
     savePCD: true                              
