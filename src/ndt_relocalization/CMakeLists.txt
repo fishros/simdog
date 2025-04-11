@@ -13,9 +13,17 @@ find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(PCL REQUIRED COMPONENTS common io registration filters)
 find_package(pcl_conversions REQUIRED)
 find_package(Eigen3 REQUIRED)
+
+# 查找PCL，不使用IMPORTED目标方式
+find_package(PCL 1.12 REQUIRED COMPONENTS common io filters search kdtree features registration)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+# 查找ndt_omp_ros2
+find_package(ndt_omp_ros2 REQUIRED)
 
 # Add executable
 add_executable(ndt_relocalization_node 
@@ -40,8 +48,8 @@ ament_target_dependencies(ndt_relocalization_node
 )
 
 target_link_libraries(ndt_relocalization_node
-  pcl_filters
   ${PCL_LIBRARIES}
+  ndt_omp_ros2::ndt_omp
 )
 
 # Install

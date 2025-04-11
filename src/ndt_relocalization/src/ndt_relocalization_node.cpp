@@ -2,7 +2,8 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <pcl/io/pcd_io.h>
-#include <pcl/registration/ndt.h>
+// #include <pcl/registration/ndt.h> // 注释掉原始NDT
+#include <pclomp/ndt_omp.h> // 使用OpenMP加速的NDT
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/approximate_voxel_grid.h>
@@ -15,8 +16,11 @@
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> 
+
 using PointT = pcl::PointXYZ;
 using PointCloud = pcl::PointCloud<PointT>;
+// 使用pclomp命名空间的NDT实现
+using NormalDistributionsTransform = pclomp::NormalDistributionsTransform<PointT, PointT>;
 
 class NDTLocalization : public rclcpp::Node {
 public:
@@ -177,13 +181,21 @@ public:
 private:
     void createNDT() {
         // 设置NDT参数
-        ndt_.setResolution(ndt_resolution_);
-        ndt_.setStepSize(ndt_step_size_);
-        ndt_.setTransformationEpsilon(ndt_epsilon_);
-        ndt_.setMaximumIterations(ndt_max_iterations_);
-        ndt_.setInputTarget(global_map_);
-        RCLCPP_INFO(this->get_logger(), "NDT parameters: resolution=%f, step_size=%f, epsilon=%f, max_iter=%d",
-                   ndt_resolution_, ndt_step_size_, ndt_epsilon_, ndt_max_iterations_);
+        ndt_ = std::make_shared<NormalDistributionsTransform>();
+        ndt_->setResolution(ndt_resolution_);
+        ndt_->setStepSize(ndt_step_size_);
+        ndt_->setTransformationEpsilon(ndt_epsilon_);
+        ndt_->setMaximumIterations(ndt_max_iterations_);
+        ndt_->setInputTarget(global_map_);
+        
+        // 设置OpenMP线程数
+        ndt_->setNumThreads(ndt_num_threads_);
+        
+        // 设置邻域搜索方法，可选KDTREE、DIRECT26、DIRECT7或DIRECT1
+        ndt_->setNeighborhoodSearchMethod(pclomp::KDTREE);
+        
+        RCLCPP_INFO(this->get_logger(), "NDT parameters: resolution=%f, step_size=%f, epsilon=%f, max_iter=%d, threads=%d",
+                   ndt_resolution_, ndt_step_size_, ndt_epsilon_, ndt_max_iterations_, ndt_num_threads_);
     }
     
     void createMultiResolutionMaps() {
@@ -192,15 +204,21 @@ private:
         
         // 创建不同分辨率的NDT对象
         for (const auto& resolution : ndt_resolutions_) {
-            auto ndt = std::make_shared<pcl::NormalDistributionsTransform<PointT, PointT>>();
+            auto ndt = std::make_shared<NormalDistributionsTransform>();
             ndt->setResolution(resolution);
             ndt->setStepSize(ndt_step_size_);
             ndt->setTransformationEpsilon(ndt_epsilon_);
             ndt->setMaximumIterations(ndt_max_iterations_);
             ndt->setInputTarget(global_map_);
             
+            // 设置OpenMP线程数
+            ndt->setNumThreads(ndt_num_threads_);
+            
+            // 设置邻域搜索方法
+            ndt->setNeighborhoodSearchMethod(pclomp::KDTREE);
+            
             ndt_vector_.push_back(ndt);
-            RCLCPP_INFO(this->get_logger(), "Added NDT at resolution: %f", resolution);
+            RCLCPP_INFO(this->get_logger(), "Added NDT at resolution: %f with %d threads", resolution, ndt_num_threads_);
         }
         RCLCPP_INFO(this->get_logger(), "Created %zu multi-resolution NDT objects", ndt_vector_.size());
     }
@@ -376,20 +394,24 @@ private:
                 final_transform = performMultiResolutionNDT(downsampled_cloud, init_guess);
             } else {
                 // 执行传统单一分辨率NDT配准
-                ndt_.setInputSource(downsampled_cloud);
+                if (!ndt_) {
+                    RCLCPP_ERROR(this->get_logger(), "Single resolution NDT object not initialized!");
+                    return;
+                }
+                ndt_->setInputSource(downsampled_cloud);
                 pcl::PointCloud<PointT> output;
-                ndt_.align(output, init_guess);
+                ndt_->align(output, init_guess);
                 
-                if (!ndt_.hasConverged()) {
+                if (!ndt_->hasConverged()) {
                     RCLCPP_WARN(this->get_logger(), "NDT did not converge");
                     return;
                 }
                 
-                final_transform = ndt_.getFinalTransformation();
+                final_transform = ndt_->getFinalTransformation();
                 
                 if (debug_mode_) {
                     RCLCPP_INFO(this->get_logger(), "Single-scale NDT: score=%f, iterations=%d",
-                                ndt_.getFitnessScore(), ndt_.getFinalNumIteration());
+                                ndt_->getFitnessScore(), ndt_->getFinalNumIteration());
                 }
             }
         } catch (const pcl::PCLException& e) {
@@ -482,8 +504,8 @@ private:
     }
 
     // 成员变量
-    pcl::NormalDistributionsTransform<PointT, PointT> ndt_;
-    std::vector<std::shared_ptr<pcl::NormalDistributionsTransform<PointT, PointT>>> ndt_vector_;
+    std::shared_ptr<NormalDistributionsTransform> ndt_;  // 使用共享指针
+    std::vector<std::shared_ptr<NormalDistributionsTransform>> ndt_vector_; // 使用共享指针
     
     PointCloud::Ptr global_map_;
     rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_sub_;

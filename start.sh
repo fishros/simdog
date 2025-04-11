@@ -12,5 +12,5 @@ gnome-terminal -- bash -c "source install/setup.bash && ros2 launch go2_config g
 sleep $WAIT_TIME
 
 gnome-terminal -- bash -c "source install/setup.bash && ros2 launch lio_sam lidar.launch.py; exec bash"
-
 gnome-terminal -- bash -c "source install/setup.bash && ros2 run teleop_twist_keyboard teleop_twist_keyboard; exec bash"
+gnome-terminal -- bash -c "source install/setup.bash && ros2 launch ndt_relocalization ndt_localization.launch.py; exec bash"

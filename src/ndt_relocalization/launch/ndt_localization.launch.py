@@ -13,6 +13,7 @@ def generate_launch_description():
     input_cloud_topic = LaunchConfiguration('input_cloud_topic', default='/velodyne_points')
     debug_mode = LaunchConfiguration('debug_mode', default='true')
     use_multi_scale_ndt = LaunchConfiguration('use_multi_scale_ndt', default='true')
+    ndt_num_threads = LaunchConfiguration('ndt_num_threads', default='4')
  
     # 启动NDT重定位节点
     ndt_relocalization_node = launch_ros.actions.Node(
@@ -29,7 +30,7 @@ def generate_launch_description():
                 # 多分辨率NDT设置
                 'use_multi_scale_ndt': use_multi_scale_ndt,  # 是否使用多分辨率NDT算法
                 'ndt_resolutions': [4.0, 2.0, 1.0],  # 逐步减小的分辨率，从粗到细
-                'ndt_num_threads': 4,  # 并行线程数
+                'ndt_num_threads': ndt_num_threads,  # 并行线程数，OMP加速版NDT使用
                 
                 # 单分辨率NDT参数（多分辨率模式下仍会使用部分参数）
                 'ndt_resolution': 1.0,  # 单分辨率模式下使用的分辨率
@@ -105,6 +106,10 @@ def generate_launch_description():
             'use_multi_scale_ndt',
             default_value='true',
             description='Enable multi-resolution NDT algorithm for better convergence'),
+        launch.actions.DeclareLaunchArgument(
+            'ndt_num_threads',
+            default_value='4',
+            description='Number of threads to use for OpenMP accelerated NDT'),
         launch.actions.DeclareLaunchArgument(
             'use_rviz',
             default_value='true',

@@ -50,10 +50,20 @@ include_directories(
   include
 )
 
-add_library(ndt_omp
+# 将ndt_omp库设置为SHARED库以便导出
+add_library(ndt_omp SHARED
   src/pclomp/voxel_grid_covariance_omp.cpp
   src/pclomp/ndt_omp.cpp
   src/pclomp/gicp_omp.cpp
+)
+
+target_include_directories(ndt_omp PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+target_link_libraries(ndt_omp
+  ${PCL_LIBRARIES}
 )
 
 add_executable(align
@@ -73,29 +83,35 @@ ament_target_dependencies(align
 )
 
 ############
-## INSTAL ##
+## INSTALL ##
 ############
 
+# 安装可执行文件
 install(TARGETS 
   align
   DESTINATION lib/${PROJECT_NAME}
 )
 
+# 安装库文件和导出目标
 install(
-  TARGETS
-    align
-    ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-    RUNTIME DESTINATION bin
+  TARGETS ndt_omp
+  EXPORT ndt_omp_ros2-targets
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
 )
 
-# install headers
+# 安装头文件
 install(
   DIRECTORY "include/"
   DESTINATION include
 )
 
+# 导出目标
+ament_export_targets(ndt_omp_ros2-targets HAS_LIBRARY_TARGET)
 ament_export_dependencies(rclcpp)
+ament_export_dependencies(PCL)
 ament_export_include_directories(include)
+ament_export_libraries(ndt_omp)
 
 ament_package()
