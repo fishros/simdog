@@ -50,6 +50,18 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# Install rviz configuration
+install(DIRECTORY
+  rviz
+  DESTINATION share/${PROJECT_NAME}
+)
+
 add_executable(map_publisher src/map_publisher.cpp)
 target_include_directories(map_publisher PRIVATE
   ${PCL_INCLUDE_DIRS}
