@@ -57,7 +57,9 @@ colcon build --symlink-install
 构建好工程之后，然后启动文件
 
 ```bash
-bash start.sh
+bash start.sh 
+# 或者在docker环境内使用tmux
+# bash tmuxstart.sh 
 ```
 
 ![image.png](picture/image%201.png)
